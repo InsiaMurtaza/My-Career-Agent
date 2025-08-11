@@ -1,6 +1,5 @@
 import os
-from agents import Agent, OpenAIChatCompletionsModel, set_tracing_disabled
-from openai import AsyncOpenAI
+from agents import Agent, OpenAIChatCompletionsModel, AsyncOpenAI, set_tracing_disabled
 from dotenv import load_dotenv
 from function_tools import get_career_roadmap
 
@@ -44,3 +43,4 @@ career_agent = Agent(
     tools=[get_career_roadmap],
     model=OpenAIChatCompletionsModel(model=MODEL,openai_client= client)
 )
+
