@@ -1,8 +1,7 @@
 import os
 import asyncio
-from openai import AsyncOpenAI
 from dotenv import load_dotenv
-from agents import Runner, set_tracing_disabled
+from agents import Runner, AsyncOpenAI, set_tracing_disabled
 from career_agents import career_agent
 
 load_dotenv()
